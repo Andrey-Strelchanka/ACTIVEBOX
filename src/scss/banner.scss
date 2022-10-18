@@ -1,0 +1,58 @@
+.banner {
+
+    .banner &__container {
+        text-align: center;
+        padding: 130px 15px 120px;
+        @media only screen and (max-width: 1024px) {
+            padding: 157px 16px 104px;
+        }
+        @media only screen and (max-width: 576px) {
+            padding: 50px 16px 52px;
+        }
+    }
+
+    &__title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        color: #ffffff;
+        height: 150px;
+        @media only screen and (max-width: 1024px) {
+            font-size: 48px;
+            line-height: 56px;
+            height: 112px;
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 36px;
+            line-height: 42px;
+            height: 170px;
+        }
+    }
+    
+
+    &__subtitle {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+        margin: 30px 0 80px 0;
+        @media only screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            height: 42px;
+            margin: 62px 0 89px 0;
+        }
+        @media only screen and (max-width: 576px) {
+            font-size: 14px;
+            line-height: 16px;
+            height: 64px;
+            margin: 33px 0 51px 0;
+        }
+    }
+
+}
+
