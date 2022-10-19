@@ -1,0 +1,104 @@
+.work {
+
+    &__row {
+        display: flex;
+        @media only screen and (max-width: 576px) {
+            flex-direction: column;
+        }
+    }
+
+    &__double-card {
+        display: flex;
+        flex: 1 1 50%;
+    }
+
+    &__card {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: all .3s ease;
+        }
+        &:hover:before {
+            background-color: #FF4343CC;
+        }
+        &:active:before {
+            background-color: #B90C0CCC;
+        }
+        &:hover {
+            .work__name, .work__text {
+                opacity: 1;
+            }
+        }   
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__name {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        color: #fff;
+        opacity: 0;
+        position: absolute;
+        top: 35%;
+        left: 26.3%;
+        @media only screen and (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            left: 20%;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            font-size: 16px;
+            line-height: 19px;
+            left: 18%;
+        }
+    }
+
+    &__text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        position: absolute;
+        bottom: 37.7%;
+        left: 26.3%;
+        @media only screen and (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            left: 20%;
+            font-size: 11px;
+            line-height: 13px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            font-size: 12px;
+            line-height: 14px;
+            left: 18%;
+        }
+    }
+
+
+}
