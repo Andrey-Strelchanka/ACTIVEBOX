@@ -6,155 +6,158 @@
 
 @import "./node_modules/bootstrap/scss/carousel";
 
-@import url('fonts.scss');
-@import url('nullstyle.scss');
-@import url('header.scss');
-@import url('banner.scss');
-@import url('features.scss');
-@import url('work.scss');
-@import url('team.scss');
-@import url('carousel.scss');
+@import url("fonts.scss");
+@import url("nullstyle.scss");
+@import url("header.scss");
+@import url("banner.scss");
+@import url("features.scss");
+@import url("work.scss");
+@import url("team.scss");
+@import url("carousel.scss");
+@import url("download.scss");
+@import url("footer.scss");
 
 .wrapper-background {
-    background: #252B49 url(../img/wrapper/background_banner.png);
-    background-repeat: no-repeat;
-    background-size: auto auto;
-    background-position: top center;
-    background-blend-mode: soft-light;
-    opacity: 0.8;
-    @media only screen and (max-width: 768px) {
-        &.active {
-            position: fixed;
-            width: 100%;
-        }
+  background: #252b49 url(../img/wrapper/background_banner.png);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: top center;
+  background-blend-mode: soft-light;
+  opacity: 0.8;
+  @media only screen and (max-width: 768px) {
+    &.active {
+      position: fixed;
+      width: 100%;
     }
+  }
 }
 
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
-    @media only screen and (max-width: 1024px) {
-        max-width: 1024px;
-        padding: 0 16px;
-    }
-    @media only screen and (max-width: 768px) {
-        max-width: 768px;
-        padding: 0 16px;
-    }
-    @media only screen and (max-width: 576px) {
-        max-width: 576px;
-        padding: 0 16px;
-    }
-    @media only screen and (max-width: 320px) {
-        max-width: 320px;
-        padding: 0 16px;
-    }
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media only screen and (max-width: 1024px) {
+    max-width: 1024px;
+    padding: 0 16px;
+  }
+  @media only screen and (max-width: 768px) {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+  @media only screen and (max-width: 576px) {
+    max-width: 576px;
+    padding: 0 16px;
+  }
+  @media only screen and (max-width: 320px) {
+    max-width: 320px;
+    padding: 0 16px;
+  }
 }
 
 .row {
-    display: flex;
-    margin: 0 -15px;
+  display: flex;
+  margin: 0 -15px;
 }
 
 .column {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .button {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffffff;
-    background: #FF4343;
-    width: 370px;
-    height: 80px;
-    &:hover {
-        background: #E71414;
-    }
-    &:active {
-        background: #FF4343;
-        box-shadow: 4px 4px 30px #FF4343;
-    }
-    @media only screen and (max-width: 1024px) {
-        width: 314px;
-    }
-    @media only screen and (max-width: 576px) {
-        width: 280px;
-        height: 60px;
-    }
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  background: #ff4343;
+  width: 370px;
+  height: 80px;
+  &:hover {
+    background: #e71414;
+  }
+  &:active {
+    background: #ff4343;
+    box-shadow: 4px 4px 30px #ff4343;
+  }
+  @media only screen and (max-width: 1024px) {
+    width: 314px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 280px;
+    height: 60px;
+  }
 }
 
 .carousel-indicators {
-    z-index: 2;
-    justify-content: center;
-    margin-bottom: 1rem;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    right: 0;
-    @media only screen and (max-width: 1024px) {
-        bottom: -50px;
-    }
+  z-index: 2;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  @media only screen and (max-width: 1024px) {
+    bottom: -50px;
+  }
 }
 
 .carousel-indicators [data-bs-target] {
-    box-sizing: content-box;
-    width: 14px;
-    height: 14px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid #7E5D6F;
-    border-radius: 50%;
-    flex: 0 auto;
-    margin-left: 12px;
-    margin-right: 12px;
-    padding: 0;
-    transition: .6s ease;
-    @media only screen and (max-width: 1024px) {
-        width: 10px;
-        height: 10px;
-    }
+  box-sizing: content-box;
+  width: 14px;
+  height: 14px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #7e5d6f;
+  border-radius: 50%;
+  flex: 0 auto;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 0;
+  transition: 0.6s ease;
+  @media only screen and (max-width: 1024px) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .carousel-indicators .active {
-    background-color: #7E5D6F;
+  background-color: #7e5d6f;
 }
 
-.carousel-item.active, .carousel-item-next, .carousel-item-prev {
-    display: flex;
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
 }
 
 .carousel-item {
-    float: left;
-    min-width: 100%;
-    backface-visibility: hidden;
-    margin-right: -100%;
-    transition: transform .6s ease-in-out;
-    display: none;
-    position: relative;
+  float: left;
+  min-width: 100%;
+  backface-visibility: hidden;
+  margin-right: -100%;
+  transition: transform 0.6s ease-in-out;
+  display: none;
+  position: relative;
+  img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 49%;
+    height: auto;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
     img {
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 49%;
-        height: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 100%;
+      height: auto;
     }
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-        img {
-            flex-grow: 1;
-            flex-shrink: 1;
-            width: 100%;
-            height: auto;
-        }
-    }
+  }
 }
-
