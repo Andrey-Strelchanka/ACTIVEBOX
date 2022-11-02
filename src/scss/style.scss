@@ -18,16 +18,27 @@
 @import url("footer.scss");
 
 .wrapper-background {
-  background: #252b49 url(../img/wrapper/background_banner.png);
+  background: url(../img/wrapper/background_banner.png);
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: top center;
-  background-blend-mode: soft-light;
-  opacity: 0.8;
+  position: relative;
+  &:after {
+    content: '';
+    position:absolute;
+    background-color: #252b49;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
   @media only screen and (max-width: 768px) {
     &.active {
       position: fixed;
-      width: 100%;
+      z-index: 3;
     }
   }
 }

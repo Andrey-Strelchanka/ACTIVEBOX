@@ -11,7 +11,7 @@ function mobileMenu() {
     hamb.classList.toggle("active");
     navMenu.classList.toggle("active");
     headerMenu.classList.toggle("active");
-    wrapper-background.classList.toggle("active");
+    header.classList.toggle("active");
 }
 
 const navLink = document.querySelectorAll(".header__navbar-link");
@@ -22,5 +22,5 @@ function closeMenu() {
     hamb.classList.remove("active");
     navMenu.classList.remove("active");
     headerMenu.classList.remove("active");
-    wrapper-background.classList.remove("active");
+    header.classList.remove("active");
 }
